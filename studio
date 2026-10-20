@@ -1,0 +1,482 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Michelle con Flores · Portafolio</title>
+<meta name="description" content="Natasha M. Flores · Brand & Communications Strategist. Consultoría de marca y estrategia 360: identidad, contenido, video, fotografía y campañas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@400;500;600;700&family=Sorts+Mill+Goudy:ital@0;1&display=swap">
+<style>
+/* Portafolio de una sola página sobre azul profundo (esencia de la marca); la sección «Cómo trabajo» va en tema claro porque explica. Flores reales en las orillas. */
+:root{
+  color-scheme: dark;
+  --noche:#0B1260; --azul:#1221E5; --indigo:#2A0ED9; --rosa:#FF25A1; --coral:#FF6534; --mandarina:#FF8A2B;
+  --lila:#CCAEFE; --crema:#FAF2E5; --mute:#C3C5F2; --ink:#14123A; --ink-mute:#55536E;
+  --card:rgba(255,255,255,.06); --line:rgba(204,174,254,.22);
+  --display:"DM Serif Display",Georgia,serif; --sans:"Quicksand",system-ui,-apple-system,"Segoe UI",sans-serif; --goudy:"Sorts Mill Goudy",Georgia,serif;
+  --gutter:clamp(16px,4.5vw,64px); --max:1280px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:#080C45;color:var(--crema);font-family:var(--sans);font-size:17px;line-height:1.6;font-weight:500;overflow-x:hidden;
+  background-image:radial-gradient(ellipse 60% 40% at 85% 0%,rgba(255,37,161,.22),transparent 70%),radial-gradient(ellipse 50% 30% at 0% 45%,rgba(255,101,52,.14),transparent 70%),linear-gradient(180deg,#0B1260 0%,#101AA8 40%,#0B1260 100%)}
+img,video{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lila);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.eb{font-weight:700;font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--mandarina);margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance;line-height:1.04}
+h2{font-size:clamp(36px,5vw,64px)}
+h2 em,h1 em{font-style:italic;color:var(--rosa)} h2 em.n{color:var(--coral)}
+.lede{color:var(--mute);font-size:clamp(17px,1.6vw,20px);max-width:58ch;margin:0}
+section{position:relative;padding-block:clamp(64px,9vw,120px);overflow:hidden}
+.shead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:24px 56px;align-items:end;margin-bottom:clamp(28px,4vw,48px)}
+.shead .t{display:flex;flex-direction:column;gap:14px}
+@media (max-width:860px){.shead{grid-template-columns:1fr}}
+.flor{position:absolute;pointer-events:none;z-index:0;filter:drop-shadow(0 0 26px rgba(255,140,200,.4))}
+section > .wrap{position:relative;z-index:1}
+@media (max-width:700px){section > .flor{display:none}}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:99px;padding:14px 26px;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn.p{background:var(--rosa);color:#fff}
+.btn.p:hover{background:#ff3fae}
+.btn.o{border-color:rgba(250,242,229,.45);color:var(--crema);background:transparent}
+.btn.o:hover{border-color:var(--crema)}
+
+/* barra */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:rgba(9,13,70,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.bar img{height:40px;width:auto}
+.nav{display:flex;align-items:center;gap:26px;font-size:15px;font-weight:600}
+.nav a{text-decoration:none;color:var(--mute)} .nav a:hover{color:var(--crema)}
+.nav .btn{padding:10px 20px;font-size:15px;color:#fff}
+@media (max-width:980px){.nav a:not(.btn){display:none}}
+
+/* portada */
+.hero{padding-block:clamp(48px,8vw,104px) clamp(56px,8vw,110px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:48px;align-items:center}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(46px,6.6vw,92px);margin:18px 0 22px}
+.hero .who{font-family:var(--goudy);font-style:italic;font-size:clamp(20px,2vw,26px);color:var(--coral)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.08s}.d2{animation-delay:.18s}.d3{animation-delay:.3s}.d4{animation-delay:.42s}.d5{animation-delay:.54s}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.fan{position:relative;aspect-ratio:1/1;max-width:560px;width:100%;justify-self:center}
+.fan .c{position:absolute;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(4,6,40,.55);border:1px solid rgba(255,255,255,.18)}
+.fan .c img{width:100%;height:100%;object-fit:cover}
+.fan .c1{width:54%;aspect-ratio:4/5;left:2%;top:14%;transform:rotate(-7deg)}
+.fan .c2{width:50%;aspect-ratio:4/5;right:2%;top:4%;transform:rotate(6deg)}
+.fan .c3{width:60%;aspect-ratio:16/10;left:22%;bottom:3%;transform:rotate(-1.5deg)}
+.fan .tag{position:absolute;z-index:3;background:var(--crema);color:var(--ink);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:99px}
+
+/* marcas */
+.logos{padding-block:28px;border-block:1px solid var(--line);overflow:hidden;background:rgba(5,8,46,.35)}
+.logos .lbl{text-align:center;margin-bottom:18px}
+.marquee{display:flex;gap:18px;width:max-content;animation:slide 48s linear infinite}
+.marquee img{height:84px;width:84px;object-fit:contain;border-radius:16px;background:#fff;flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.rise{animation:none}}
+
+/* servicios */
+.serv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:980px){.serv{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.serv{grid-template-columns:1fr}}
+.sv{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 26px 24px;display:flex;flex-direction:column;gap:10px}
+.sv h3{font-size:30px}
+.sv h3 span{color:var(--rosa)} .sv:nth-child(even) h3 span{color:var(--coral)}
+.sv p{margin:0;color:var(--mute)}
+.sv ul{margin:6px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.sv li{font-size:13.5px;font-weight:700;padding:5px 12px;border-radius:99px;border:1px solid var(--line);color:var(--crema)}
+.sv a{margin-top:auto;padding-top:10px;font-weight:700;font-size:15px;color:var(--lila);text-decoration:none}
+.sv a:hover{color:var(--crema)}
+
+/* marcas (casos) */
+.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:980px){.cases{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.cases{grid-template-columns:1fr}}
+.case{all:unset;cursor:pointer;display:flex;flex-direction:column;gap:12px;border-radius:20px}
+.case .cv{aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:rgba(255,255,255,.06);border:1px solid var(--line);position:relative}
+.case .cv img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.case:hover .cv img{transform:scale(1.04)}
+.case .n{position:absolute;right:12px;bottom:12px;background:rgba(9,13,70,.82);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:700}
+.case h3{font-size:26px}
+.case p{margin:0;color:var(--mute);font-size:15.5px;line-height:1.45}
+.case .tg{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mandarina)}
+.case:focus-visible{outline:2px solid var(--lila);outline-offset:6px}
+
+/* campañas */
+.camp-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;margin-bottom:34px}
+@media (max-width:860px){.camp-top{grid-template-columns:1fr}}
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+@media (max-width:980px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.st{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.st b{display:block;font-family:var(--display);font-weight:400;font-size:22px;line-height:1.1;margin-bottom:6px}
+.st span{font-size:14.5px;color:var(--mute);line-height:1.45;display:block}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
+.tab{font-family:var(--sans);font-weight:700;font-size:15px;padding:10px 18px;border-radius:99px;border:1.5px solid var(--line);background:transparent;color:var(--mute);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--crema);color:var(--ink);border-color:var(--crema)}
+.tabq{color:var(--mute);margin:0 0 22px;min-height:1.6em}
+.ads{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.ads{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.ads{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ad{all:unset;cursor:pointer;display:flex;flex-direction:column;gap:8px}
+.ad .im{aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.ad img{width:100%;height:100%;object-fit:cover}
+.ad span{font-size:13px;font-weight:700;color:var(--mute);letter-spacing:.06em}
+.ad:focus-visible .im{outline:2px solid var(--lila);outline-offset:3px}
+.nota{margin-top:22px;font-size:14px;color:var(--mute)}
+
+/* video */
+.feat{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:28px;align-items:center;margin-bottom:28px}
+@media (max-width:860px){.feat{grid-template-columns:1fr}}
+.vid{position:relative;border-radius:18px;overflow:hidden;background:#05082E;border:1px solid var(--line)}
+.vid video{width:100%;height:100%;object-fit:cover}
+.vid.h{aspect-ratio:16/9} .vid.v{aspect-ratio:9/16}
+.vid .play{all:unset;position:absolute;inset:0;display:grid;place-items:center;cursor:pointer;background:linear-gradient(180deg,rgba(5,8,46,0) 50%,rgba(5,8,46,.75))}
+.vid .play i{width:74px;height:74px;border-radius:50%;background:rgba(250,242,229,.92);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.vid .play i::before{content:"";border-left:22px solid var(--indigo);border-block:13px solid transparent;margin-left:6px}
+.vid .play:focus-visible i{outline:3px solid var(--lila);outline-offset:4px}
+.reels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+@media (max-width:980px){.reels{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.reels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cap{display:flex;flex-direction:column;gap:2px;margin-top:10px}
+.cap b{font-family:var(--display);font-weight:400;font-size:21px}
+.cap span{font-size:14px;color:var(--mute);line-height:1.4}
+
+/* fotografía */
+.fotos{columns:3 300px;column-gap:16px}
+.ft{all:unset;cursor:pointer;display:block;break-inside:avoid;margin-bottom:16px;border-radius:16px;overflow:hidden;position:relative;border:1px solid var(--line)}
+.ft img{width:100%}
+.ft span{position:absolute;left:12px;bottom:12px;background:rgba(9,13,70,.8);border-radius:99px;padding:5px 12px;font-size:13px;font-weight:700}
+.ft:focus-visible{outline:2px solid var(--lila);outline-offset:3px}
+
+/* web */
+.webs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:860px){.webs{grid-template-columns:1fr}}
+.wb{all:unset;cursor:pointer;display:flex;flex-direction:column;gap:10px}
+.wb .im{aspect-ratio:4/3;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.wb img{width:100%;height:100%;object-fit:cover;object-position:top}
+
+/* cómo trabajo (tema claro) */
+.claro{background:linear-gradient(135deg,#F6F3FF,#FAF2E5 55%,#FFF0F7);color:var(--ink)}
+.claro::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,#1221E5,#FF25A1 55%,#FF6534)}
+.claro h2{color:var(--indigo)} .claro .lede{color:var(--ink-mute)} .claro .eb{color:var(--rosa)}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:p}
+@media (max-width:900px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.flow{grid-template-columns:1fr}}
+.fl{background:#fff;border:1px solid #E4DEF3;border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(42,14,217,.06)}
+.fl .k{font-family:var(--display);font-size:46px;line-height:1;color:var(--rosa)}
+.fl h3{font-size:26px;color:var(--indigo);margin:10px 0 8px}
+.fl p{margin:0;color:var(--ink);font-size:16px;line-height:1.5}
+.claro .flor{filter:drop-shadow(0 10px 18px rgba(42,14,217,.14))}
+
+/* cotiza */
+.cot{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:start}
+@media (max-width:900px){.cot{grid-template-columns:1fr}}
+.contacto{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.ci{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;flex-wrap:wrap}
+.ci .l{font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mandarina)}
+.ci .v{font-weight:700;user-select:all;word-break:break-word}
+.mini{font-family:var(--sans);font-weight:700;font-size:13.5px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--crema);cursor:pointer;text-decoration:none}
+.mini:hover{border-color:var(--crema)}
+form{background:rgba(5,8,46,.5);border:1px solid var(--line);border-radius:24px;padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:20px}
+fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+legend{font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--lila);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;cursor:pointer;margin:0}
+.chips span{display:inline-block;padding:10px 16px;border-radius:99px;border:1.5px solid var(--line);font-weight:700;font-size:15px;color:var(--mute)}
+.chips input:checked + span{background:var(--rosa);border-color:var(--rosa);color:#fff}
+.chips input:focus-visible + span{outline:2px solid var(--lila);outline-offset:3px}
+.fld{display:flex;flex-direction:column;gap:8px}
+.fld label{font-weight:700;font-size:14px;color:var(--mute)}
+.fld input,.fld textarea{font:inherit;font-size:16px;color:var(--crema);background:rgba(255,255,255,.06);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px}
+.fld textarea{min-height:96px;resize:vertical}
+.fld input:focus,.fld textarea:focus{outline:none;border-color:var(--lila)}
+.prev{font-size:15px;color:var(--mute);background:rgba(255,255,255,.04);border:1px dashed var(--line);border-radius:14px;padding:14px 16px;white-space:pre-wrap;margin:0}
+.acts{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.ok{font-size:14px;color:var(--lila);min-height:1.4em}
+
+footer{padding-block:56px;border-top:1px solid var(--line);text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px}
+footer img{height:64px;width:auto}
+footer p{margin:0}
+footer .tl{font-family:var(--display);font-size:clamp(24px,3vw,34px);line-height:1.2}
+footer .tl em{color:var(--coral)}
+footer small{color:var(--mute)}
+
+/* visor */
+dialog{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);width:100%;color:var(--crema)}
+dialog::backdrop{background:rgba(4,6,36,.9);backdrop-filter:blur(6px)}
+.lb{display:flex;flex-direction:column;gap:12px;align-items:center}
+.lb img{max-height:78vh;width:auto;max-width:100%;border-radius:12px;background:#fff}
+.lb .row{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;flex-wrap:wrap}
+.lb .cap2{font-weight:700}
+.lb .cap2 span{color:var(--mute);font-weight:500}
+.lb .ctl{display:flex;gap:8px}
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="#inicio" aria-label="Michelle con Flores, inicio"><img src="assets/marca/logoBlanco.webp" alt="Michelle con Flores"></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#servicios">Servicios</a><a href="#marcas">Marcas</a><a href="#campanas">Campañas</a><a href="#video">Video</a><a href="#fotografia">Fotografía</a><a href="#proceso">Cómo trabajo</a>
+      <a class="btn p" href="#cotiza">Cotiza tu proyecto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <img class="flor" src="assets/marca/cerezo.webp" alt="" style="width:170px;right:-30px;top:-30px;transform:rotate(-24deg);opacity:.9">
+    <img class="flor" src="assets/marca/loto.webp" alt="" style="width:230px;left:-80px;bottom:-60px;opacity:.85">
+    <div class="wrap">
+      <div>
+        <p class="eb rise d1">Brand &amp; Communications Strategist</p>
+        <h1 class="rise d2">Estrategia de marca 360, <em>de la idea a la campaña.</em></h1>
+        <p class="lede rise d3">Soy Natasha M. Flores. Te ayudo a definir quién es tu marca, cómo se ve, qué dice y cómo llega a las personas correctas. Todo con un solo equipo y una sola estrategia.</p>
+        <p class="who rise d4" style="margin:18px 0 0">Consultoría de marca · Diseño · Contenido · Campañas</p>
+        <div class="ctas rise d5"><a class="btn p" href="#cotiza">Cotiza tu proyecto</a><a class="btn o" href="#marcas">Ver trabajo</a></div>
+      </div>
+      <div class="fan rise d3" aria-hidden="true">
+        <img class="flor" src="assets/marca/peonia.webp" alt="" style="width:46%;right:-12%;bottom:-10%;z-index:4;transform:rotate(-10deg)">
+        <div class="c c1"><img src="assets/img/coneja-01.webp" alt=""></div>
+        <div class="c c2"><img src="assets/ads/ad-31.webp" alt=""></div>
+        <div class="c c3"><img src="assets/img/foto-01.webp" alt=""></div>
+        <span class="tag" style="left:0;top:4%">Marca</span><span class="tag" style="right:6%;top:-2%">Campaña</span><span class="tag" style="left:20%;bottom:-2%">Foto y video</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="logos" aria-label="Marcas con las que he trabajado">
+    <p class="eb lbl">Marcas con las que he trabajado</p>
+    <div class="marquee" id="marquee"></div>
+  </div>
+
+  <section id="servicios">
+    <img class="flor" src="assets/marca/amapola.webp" alt="" style="width:200px;right:-70px;top:40px;transform:rotate(-12deg);opacity:.85">
+    <div class="wrap">
+      <div class="shead"><div class="t"><p class="eb">Servicios</p><h2>Una marca completa, <em>pensada de punta a punta</em></h2></div>
+        <p class="lede">Puedes contratar un servicio o la estrategia completa. En los dos casos parto de lo mismo: qué quieres lograr y a quién le hablas.</p></div>
+      <div class="serv">
+        <article class="sv"><h3>Consultoría <span>de marca</span></h3><p>Diagnóstico, posicionamiento y ADN de marca: propósito, público, mensaje y tono.</p><ul><li>Diagnóstico</li><li>ADN de marca</li><li>Tono de voz</li></ul><a href="#cotiza" data-s="Consultoría de marca">Cotizar →</a></article>
+        <article class="sv"><h3>Diseño <span>de marcas</span></h3><p>Logotipo, identidad visual, manual de uso y aplicaciones listas para usar.</p><ul><li>Identidad</li><li>Manual de marca</li><li>Papelería</li></ul><a href="#cotiza" data-s="Diseño de marca">Cotizar →</a></article>
+        <article class="sv"><h3>Trafficker <span>y campañas</span></h3><p>Campañas en Meta Ads de principio a fin: estrategia, creativos, pauta, landing y reporte.</p><ul><li>Meta Ads</li><li>Embudos</li><li>Reportes</li></ul><a href="#cotiza" data-s="Campañas Meta Ads">Cotizar →</a></article>
+        <article class="sv"><h3>Contenido <span>y video</span></h3><p>Guiones, edición de reels, animación y contenido para redes con intención.</p><ul><li>Reels</li><li>Guiones</li><li>Animación</li></ul><a href="#cotiza" data-s="Contenido y video">Cotizar →</a></article>
+        <article class="sv"><h3>Fotografía <span>de marca</span></h3><p>Producto, retrato, experiencias y eventos, pensados para tus redes y tu web.</p><ul><li>Experiencias</li><li>Retrato</li><li>Eventos</li></ul><a href="#cotiza" data-s="Fotografía">Cotizar →</a></article>
+        <article class="sv"><h3>Web <span>y landings</span></h3><p>Landings de registro, páginas de evento y herramientas web conectadas a tu estrategia.</p><ul><li>Landings</li><li>Eventos</li><li>Links</li></ul><a href="#cotiza" data-s="Web y landings">Cotizar →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="marcas">
+    <img class="flor" src="assets/marca/cerezo.webp" alt="" style="width:150px;left:-40px;top:60px;transform:rotate(28deg);opacity:.85">
+    <div class="wrap">
+      <div class="shead"><div class="t"><p class="eb">Diseño de marcas</p><h2>Marcas que <em class="n">se reconocen</em></h2></div>
+        <p class="lede">Identidades, manuales, eventos y contenido. Toca cada proyecto para ver las piezas.</p></div>
+      <div class="cases" id="cases"></div>
+    </div>
+  </section>
+
+  <section id="campanas">
+    <img class="flor" src="assets/marca/peonia.webp" alt="" style="width:220px;right:-80px;top:20px;transform:rotate(-14deg);opacity:.8">
+    <div class="wrap">
+      <div class="shead"><div class="t"><p class="eb">Trafficker y campañas</p><h2>Campañas que <em>llevan a la acción</em></h2></div>
+        <p class="lede">Pauta en Meta Ads para eventos, preventas y experiencias. Cada campaña tiene un objetivo claro y se mide.</p></div>
+      <div class="steps" style="margin-bottom:38px">
+        <div class="st"><b>Objetivo</b><span>Qué acción buscamos: registros, mensajes, citas o ventas.</span></div>
+        <div class="st"><b>Público</b><span>Segmentación por ubicación, intereses y audiencias propias.</span></div>
+        <div class="st"><b>Creativos</b><span>Anuncios con un mensaje por pieza y variantes para probar.</span></div>
+        <div class="st"><b>Embudo</b><span>Landing, formulario y seguimiento por WhatsApp o CRM.</span></div>
+        <div class="st"><b>Reporte</b><span>Resultados claros y ajustes con lo que funciona.</span></div>
+      </div>
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <p class="tabq" id="tabq"></p>
+      <div class="ads" id="ads" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <section id="video">
+    <img class="flor" src="assets/marca/loto.webp" alt="" style="width:200px;left:-70px;bottom:40px;opacity:.8">
+    <div class="wrap">
+      <div class="shead"><div class="t"><p class="eb">Video</p><h2>Historias <em class="n">en movimiento</em></h2></div>
+        <p class="lede">Reels, videos de marca, animación y series educativas. Dale play a cada uno.</p></div>
+      <div class="feat" id="feat"></div>
+      <div class="reels" id="reels"></div>
+    </div>
+  </section>
+
+  <section id="fotografia">
+    <img class="flor" src="assets/marca/amapola.webp" alt="" style="width:190px;right:-60px;top:30px;transform:rotate(-10deg);opacity:.85">
+    <div class="wrap">
+      <div class="shead"><div class="t"><p class="eb">Fotografía</p><h2>Imágenes con <em>intención</em></h2></div>
+        <p class="lede">Experiencias, retrato y eventos. Fotos pensadas para contar la marca, no solo para llenar el feed.</p></div>
+      <div class="fotos" id="fotos"></div>
+      <div class="shead" style="margin-top:72px"><div class="t"><p class="eb">Web y landings</p><h2 style="font-size:clamp(30px,3.6vw,46px)">Páginas que <em class="n">convierten</em></h2></div></div>
+      <div class="webs" id="webs"></div>
+    </div>
+  </section>
+
+  <section id="proceso" class="claro">
+    <img class="flor" src="assets/marca/cerezo.webp" alt="" style="width:130px;right:-20px;bottom:-30px;transform:rotate(-22deg)">
+    <div class="wrap">
+      <div class="shead"><div class="t"><p class="eb">Cómo trabajo</p><h2>Cuatro pasos, <em>sin rodeos</em></h2></div>
+        <p class="lede">Así trabajo cualquier proyecto, desde una campaña puntual hasta una marca completa.</p></div>
+      <div class="flow">
+        <div class="fl"><div class="k">01</div><h3>Diagnóstico</h3><p>Revisamos tu marca, tu público y lo que ya tienes. Defino qué falta y qué sí funciona.</p></div>
+        <div class="fl"><div class="k">02</div><h3>Estrategia</h3><p>Objetivo, mensaje, canales y calendario. Sabes qué se hará y por qué.</p></div>
+        <div class="fl"><div class="k">03</div><h3>Creación</h3><p>Identidad, contenido, video, fotografía o campañas, con revisiones contigo.</p></div>
+        <div class="fl"><div class="k">04</div><h3>Lanzamiento y medición</h3><p>Publicamos, medimos y ajustamos con datos reales.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cotiza">
+    <img class="flor" src="assets/marca/peonia.webp" alt="" style="width:240px;left:-90px;bottom:-60px;transform:rotate(14deg);opacity:.85">
+    <div class="wrap cot">
+      <div>
+        <p class="eb">Cotiza</p>
+        <h2 style="margin-top:14px">Tu marca merece una historia <em>que la sostenga.</em></h2>
+        <p class="lede" style="margin-top:18px">Revisemos tu mundo digital. Elige lo que necesitas y envíame tu mensaje por WhatsApp; te respondo con una propuesta.</p>
+        <div class="contacto">
+          <div class="ci"><div><div class="l">WhatsApp</div><div class="v" id="tel">+52 55 1360 9261</div></div><button class="mini" type="button" data-copy="tel">Copiar</button></div>
+          <div class="ci"><div><div class="l">Correo</div><div class="v" id="mail">natasha.mflores24@gmail.com</div></div><button class="mini" type="button" data-copy="mail">Copiar</button></div>
+          <div class="ci"><div><div class="l">Instagram</div><div class="v">@michelleconflores</div></div><a class="mini" href="https://www.instagram.com/michelleconflores/" target="_blank" rel="noopener">Abrir</a></div>
+        </div>
+      </div>
+      <form id="form" novalidate>
+        <fieldset><legend>¿Qué necesitas?</legend>
+          <div class="chips" id="chips"></div>
+        </fieldset>
+        <fieldset><legend>¿En qué punto estás?</legend>
+          <div class="chips" id="etapa"></div>
+        </fieldset>
+        <div class="fld"><label for="negocio">Tu nombre y negocio</label><input id="negocio" name="negocio" placeholder="Ej.: Ana, florería en CDMX" autocomplete="organization"></div>
+        <div class="fld"><label for="detalle">Cuéntame en una o dos líneas</label><textarea id="detalle" name="detalle" placeholder="Ej.: quiero lanzar mi marca en redes y hacer mi primera campaña"></textarea></div>
+        <p class="prev" id="prev" aria-live="polite"></p>
+        <div class="acts"><a class="btn p" id="wa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a><button class="btn o" type="button" id="copymsg">Copiar mensaje</button><span class="ok" id="ok"></span></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img src="assets/marca/logoBlanco.webp" alt="Michelle con Flores">
+  <p class="tl">La grandeza de tu marca es<br><em>el camino que creas con ella.</em></p>
+  <small>Natasha M. Flores · Brand &amp; Communications Strategist · © 2026</small>
+</footer>
+
+<dialog id="lb" aria-label="Visor de piezas">
+  <div class="lb">
+    <img id="lbimg" alt="">
+    <div class="row"><span class="cap2" id="lbcap"></span>
+      <div class="ctl"><button class="mini" type="button" id="lbprev">← Anterior</button><button class="mini" type="button" id="lbnext">Siguiente →</button><button class="mini" type="button" id="lbclose">Cerrar</button></div></div>
+  </div>
+</dialog>
+
+<script>
+const DATA = {"marcas": [{"id": "coneja", "nombre": "Coneja de Cartón", "que": "Identidad, mascota y manual de marca", "tags": "Identidad · Ilustración · Manual", "fotos": [{"src": "assets/img/coneja-01.webp", "w": 1600, "h": 900}, {"src": "assets/img/coneja-02.webp", "w": 1600, "h": 900}, {"src": "assets/img/coneja-03.webp", "w": 1600, "h": 899}, {"src": "assets/img/coneja-04.webp", "w": 1600, "h": 900}, {"src": "assets/img/coneja-05.webp", "w": 1600, "h": 900}, {"src": "assets/img/coneja-06.webp", "w": 1600, "h": 1600}, {"src": "assets/img/coneja-07.webp", "w": 1600, "h": 1600}, {"src": "assets/img/coneja-08.webp", "w": 1600, "h": 1600}, {"src": "assets/img/coneja-09.webp", "w": 1600, "h": 1600}, {"src": "assets/img/coneja-10.webp", "w": 1600, "h": 2000}, {"src": "assets/img/coneja-11.webp", "w": 1080, "h": 1350}, {"src": "assets/img/coneja-12.webp", "w": 1080, "h": 1350}, {"src": "assets/img/coneja-13.webp", "w": 1600, "h": 2000}, {"src": "assets/img/coneja-14.webp", "w": 1600, "h": 2000}, {"src": "assets/img/coneja-15.webp", "w": 1080, "h": 1350}, {"src": "assets/img/coneja-16.webp", "w": 1600, "h": 2397}, {"src": "assets/img/coneja-17.webp", "w": 1600, "h": 900}]}, {"id": "granmantra", "nombre": "Gran Mantra", "que": "Marca y comunicación de un desarrollo en la Ruta de los Cenotes", "tags": "Identidad · Eventos", "fotos": [{"src": "assets/img/granmantra-01.webp", "w": 1600, "h": 1600}, {"src": "assets/img/granmantra-02.webp", "w": 1080, "h": 1350}, {"src": "assets/img/granmantra-03.webp", "w": 1080, "h": 1350}, {"src": "assets/img/granmantra-04.webp", "w": 1080, "h": 1350}, {"src": "assets/img/granmantra-05.webp", "w": 179, "h": 177}, {"src": "assets/img/granmantra-06.webp", "w": 1544, "h": 2000}]}, {"id": "fibrax", "nombre": "Fibrax Mind Summit", "que": "Identidad de evento, señalética y merch", "tags": "Evento · Merch", "fotos": [{"src": "assets/img/fibrax-01.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fibrax-02.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fibrax-03.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fibrax-04.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fibrax-05.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fibrax-06.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fibrax-07.webp", "w": 1485, "h": 1856}, {"src": "assets/img/fibrax-08.webp", "w": 1600, "h": 900}, {"src": "assets/img/fibrax-09.webp", "w": 1600, "h": 4000}, {"src": "assets/img/fibrax-10.webp", "w": 1600, "h": 4000}, {"src": "assets/img/fibrax-11.webp", "w": 1600, "h": 4000}, {"src": "assets/img/fibrax-12.webp", "w": 1600, "h": 4000}, {"src": "assets/img/fibrax-13.webp", "w": 1600, "h": 3071}, {"src": "assets/img/fibrax-14.webp", "w": 1191, "h": 1684}, {"src": "assets/img/fibrax-15.webp", "w": 1600, "h": 978}, {"src": "assets/img/fibrax-16.webp", "w": 1600, "h": 978}]}, {"id": "mi", "nombre": "Mujeres Inversionistas", "que": "Comunicación y contenido para una comunidad de mujeres", "tags": "Contenido · Campañas", "fotos": [{"src": "assets/img/mi-01.webp", "w": 1080, "h": 1350}, {"src": "assets/img/mi-02.webp", "w": 587, "h": 508}, {"src": "assets/img/mi-03.webp", "w": 1215, "h": 1519}, {"src": "assets/img/mi-04.webp", "w": 1080, "h": 1350}, {"src": "assets/img/mi-05.webp", "w": 1080, "h": 1080}, {"src": "assets/img/mi-06.webp", "w": 1080, "h": 1080}, {"src": "assets/img/mi-07.webp", "w": 1080, "h": 1350}, {"src": "assets/img/mi-08.webp", "w": 1080, "h": 1350}, {"src": "assets/img/mi-09.webp", "w": 1080, "h": 1350}, {"src": "assets/img/mi-10.webp", "w": 1215, "h": 1519}]}, {"id": "lagunas", "nombre": "Lagunas Bacalar", "que": "Invitaciones, eventos y material de venta", "tags": "Eventos · Ventas", "fotos": [{"src": "assets/img/lagunas-01.webp", "w": 1080, "h": 1080}, {"src": "assets/img/lagunas-02.webp", "w": 1080, "h": 1350}, {"src": "assets/img/lagunas-03.webp", "w": 1080, "h": 1080}, {"src": "assets/img/lagunas-04.webp", "w": 1080, "h": 1350}, {"src": "assets/img/lagunas-05.webp", "w": 1080, "h": 1350}, {"src": "assets/img/lagunas-06.webp", "w": 1350, "h": 1920}, {"src": "assets/img/lagunas-07.webp", "w": 1544, "h": 2000}, {"src": "assets/img/lagunas-08.webp", "w": 1080, "h": 1080}]}, {"id": "glamping", "nombre": "Akumal Natura Glamping", "que": "Marca y contenido para retiros en la selva", "tags": "Identidad · Contenido", "fotos": [{"src": "assets/img/glamping-01.webp", "w": 1080, "h": 1080}, {"src": "assets/img/glamping-02.webp", "w": 1080, "h": 1080}, {"src": "assets/img/glamping-03.webp", "w": 1080, "h": 1080}, {"src": "assets/img/glamping-04.webp", "w": 1080, "h": 1080}, {"src": "assets/img/glamping-05.webp", "w": 950, "h": 489}, {"src": "assets/img/glamping-06.webp", "w": 1413, "h": 2000}, {"src": "assets/img/glamping-07.webp", "w": 1080, "h": 1080}]}, {"id": "fx", "nombre": "FX Inmobilia", "que": "Contenido para inversión inmobiliaria", "tags": "Contenido · Estrategia", "fotos": [{"src": "assets/img/fx-01.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-02.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-03.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-04.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-05.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-06.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-07.webp", "w": 1080, "h": 1080}, {"src": "assets/img/fx-08.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-09.webp", "w": 1080, "h": 1350}, {"src": "assets/img/fx-10.webp", "w": 1600, "h": 731}]}, {"id": "bufon", "nombre": "El Bufón Alterno", "que": "Manual de marca para un artista y fotógrafo", "tags": "Manual · Identidad", "fotos": [{"src": "assets/img/bufon-01.webp", "w": 1600, "h": 1626}, {"src": "assets/img/bufon-02.webp", "w": 1600, "h": 2844}, {"src": "assets/img/bufon-03.webp", "w": 1600, "h": 1022}, {"src": "assets/img/bufon-04.webp", "w": 1600, "h": 1188}]}, {"id": "brush", "nombre": "Brush Studio", "que": "Identidad y promociones para un salón de belleza", "tags": "Identidad · Promos", "fotos": [{"src": "assets/img/brush-01.webp", "w": 850, "h": 850}, {"src": "assets/img/brush-02.webp", "w": 850, "h": 850}, {"src": "assets/img/brush-03.webp", "w": 856, "h": 856}, {"src": "assets/img/brush-04.webp", "w": 856, "h": 856}, {"src": "assets/img/brush-05.webp", "w": 856, "h": 856}, {"src": "assets/img/brush-06.webp", "w": 1600, "h": 1600}, {"src": "assets/img/brush-07.webp", "w": 1600, "h": 1600}, {"src": "assets/img/brush-08.webp", "w": 1600, "h": 1600}]}, {"id": "ceo", "nombre": "CEO Odontología", "que": "Contenido educativo para redes", "tags": "Redes · Contenido", "fotos": [{"src": "assets/img/ceo-01.webp", "w": 1600, "h": 1600}, {"src": "assets/img/ceo-02.webp", "w": 1600, "h": 1600}, {"src": "assets/img/ceo-03.webp", "w": 1080, "h": 1080}, {"src": "assets/img/ceo-04.webp", "w": 1080, "h": 1080}, {"src": "assets/img/ceo-05.webp", "w": 1080, "h": 1080}, {"src": "assets/img/ceo-06.webp", "w": 1600, "h": 1600}, {"src": "assets/img/ceo-07.webp", "w": 1600, "h": 1600}]}, {"id": "telescope", "nombre": "Telescope", "que": "Campaña de servicios de marketing por giro", "tags": "Campaña · Redes", "fotos": [{"src": "assets/img/telescope-01.webp", "w": 1600, "h": 1600}, {"src": "assets/img/telescope-02.webp", "w": 1600, "h": 1600}, {"src": "assets/img/telescope-03.webp", "w": 1600, "h": 1600}, {"src": "assets/img/telescope-04.webp", "w": 1600, "h": 1600}]}, {"id": "viajero", "nombre": "Viajero sin Límites", "que": "Promociones de viajes y temporadas", "tags": "Redes · Promos", "fotos": [{"src": "assets/img/viajero-01.webp", "w": 1600, "h": 1600}, {"src": "assets/img/viajero-02.webp", "w": 1600, "h": 1600}, {"src": "assets/img/viajero-03.webp", "w": 1080, "h": 1080}, {"src": "assets/img/viajero-04.webp", "w": 1081, "h": 1081}, {"src": "assets/img/viajero-05.webp", "w": 1600, "h": 1600}]}], "logos": [{"src": "assets/img/logo-01.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-04.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-05.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-06.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-07.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-08.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-10.webp", "w": 900, "h": 900}, {"src": "assets/img/logo-12.webp", "w": 900, "h": 506}, {"src": "assets/img/logo-14.webp", "w": 900, "h": 975}, {"src": "assets/img/logo-17.webp", "w": 828, "h": 674}, {"src": "assets/img/logo-18.webp", "w": 900, "h": 485}, {"src": "assets/img/logo-19.webp", "w": 587, "h": 508}, {"src": "assets/img/logo-20.webp", "w": 778, "h": 578}, {"src": "assets/img/logo-21.webp", "w": 900, "h": 411}], "campanas": [{"nombre": "Seminarios y talleres", "que": "Registro a eventos en línea y presenciales: anuncio, landing y seguimiento por WhatsApp.", "ads": [{"src": "assets/ads/ad-30.webp", "w": 1080, "h": 1080, "marca": "Mujeres Inversionistas"}, {"src": "assets/ads/ad-31.webp", "w": 1080, "h": 1080, "marca": "Mujeres Inversionistas"}, {"src": "assets/ads/ad-33.webp", "w": 1080, "h": 1080, "marca": "Mujeres Inversionistas"}, {"src": "assets/ads/ad-35.webp", "w": 1080, "h": 1080, "marca": "Taller Patrimonial"}, {"src": "assets/ads/ad-38.webp", "w": 1080, "h": 1080, "marca": "Taller Patrimonial"}, {"src": "assets/ads/ad-41.webp", "w": 1080, "h": 1080, "marca": "Visión Patrimonial"}, {"src": "assets/ads/ad-42.webp", "w": 1080, "h": 1080, "marca": "Visión Patrimonial"}, {"src": "assets/ads/ad-28.webp", "w": 1080, "h": 893, "marca": "Mentoría 1 a 1"}]}, {"nombre": "Inmobiliario", "que": "Preventa de lotes y desarrollos: oferta clara, financiamiento y llamada a agendar.", "ads": [{"src": "assets/ads/ad-22.webp", "w": 1080, "h": 1350, "marca": "Gran Mantra"}, {"src": "assets/ads/ad-17.webp", "w": 1080, "h": 1350, "marca": "Bahía Dunas"}, {"src": "assets/ads/ad-18.webp", "w": 1080, "h": 1080, "marca": "Bahía Dunas"}, {"src": "assets/ads/ad-26.webp", "w": 1080, "h": 1080, "marca": "Lagunas Bacalar"}, {"src": "assets/ads/ad-12.webp", "w": 1080, "h": 1350, "marca": "Akumal Natura Residence"}, {"src": "assets/ads/ad-21.webp", "w": 1080, "h": 1080, "marca": "Gran Mantra"}]}, {"nombre": "Turismo y retiros", "que": "Experiencias en la Riviera Maya para coaches y comunidades.", "ads": [{"src": "assets/ads/ad-04.webp", "w": 1080, "h": 1080, "marca": "Akumal Natura Glamping"}, {"src": "assets/ads/ad-10.webp", "w": 1080, "h": 1080, "marca": "Akumal Natura Glamping"}, {"src": "assets/ads/ad-11.webp", "w": 1080, "h": 1080, "marca": "Akumal Natura Glamping"}, {"src": "assets/ads/ad-01.webp", "w": 1080, "h": 1080, "marca": "Akumal Natura Glamping"}, {"src": "assets/ads/ad-03.webp", "w": 1080, "h": 1080, "marca": "Akumal Natura Glamping"}, {"src": "assets/ads/ad-09.webp", "w": 1080, "h": 1080, "marca": "Akumal Natura Glamping"}]}], "videos": [{"src": "assets/video/yateo.mp4", "poster": "assets/video/yateo.webp", "nombre": "Yateo", "que": "Reel de experiencias en yate", "fmt": "v"}, {"src": "assets/video/krystal.mp4", "poster": "assets/video/krystal.webp", "nombre": "Hotel Krystal", "que": "Video de bienvenida para huéspedes", "fmt": "v"}, {"src": "assets/video/mau.mp4", "poster": "assets/video/mau.webp", "nombre": "Mau Fuentes", "que": "Reels de marca personal", "fmt": "v"}, {"src": "assets/video/greenwood.mp4", "poster": "assets/video/greenwood.webp", "nombre": "Greenwood", "que": "Video para desarrollo inmobiliario", "fmt": "v"}, {"src": "assets/video/xochi.mp4", "poster": "assets/video/xochi.webp", "nombre": "Coneja de Cartón", "que": "Animación de la mascota Xochi", "fmt": "v"}], "tutorial": {"src": "assets/video/tutorial-correo.mp4", "poster": "assets/video/tutorial-correo.webp", "nombre": "Michelle con Flores", "que": "Serie educativa «Tu negocio en Facebook» · video 1 de 5", "fmt": "h"}, "fotos": [{"src": "assets/img/foto-01.webp", "w": 1600, "h": 1067, "pie": "Yateo"}, {"src": "assets/img/foto-06.webp", "w": 1600, "h": 3426, "pie": "Olivia Prado · retrato"}, {"src": "assets/img/foto-02.webp", "w": 1600, "h": 1067, "pie": "Yateo"}, {"src": "assets/img/foto-08.webp", "w": 1600, "h": 1067, "pie": "Evento de pintura en vivo"}, {"src": "assets/img/foto-03.webp", "w": 1600, "h": 1067, "pie": "Yateo"}, {"src": "assets/img/foto-10.webp", "w": 1600, "h": 1067, "pie": "Yateo"}, {"src": "assets/img/foto-07.webp", "w": 1600, "h": 2400, "pie": "Evento de pintura en vivo"}, {"src": "assets/img/foto-04.webp", "w": 1600, "h": 1067, "pie": "Yateo"}, {"src": "assets/img/foto-05.webp", "w": 1600, "h": 1067, "pie": "Yateo"}, {"src": "assets/img/foto-09.webp", "w": 1600, "h": 1067, "pie": "Yateo · interiores"}], "web": [{"src": "assets/img/web-01.webp", "w": 1280, "h": 1000, "nombre": "Aniversario Fibrax", "que": "Landing de evento con registro"}, {"src": "assets/img/web-05.webp", "w": 1400, "h": 861, "nombre": "Mujeres Inversionistas", "que": "Sitio de comunidad"}, {"src": "assets/img/web-04.webp", "w": 1280, "h": 1600, "nombre": "Diccionario de flores", "que": "Herramienta web interactiva"}]};
+const $ = s => document.querySelector(s);
+const el = (t, a = {}, h = '') => { const e = document.createElement(t); for (const k in a) e.setAttribute(k, a[k]); if (h) e.innerHTML = h; return e; };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// logos (doble para el desplazamiento continuo)
+const mq = $('#marquee');
+[...DATA.logos, ...DATA.logos].forEach((l, i) => mq.append(el('img', {src: l.src, alt: i < DATA.logos.length ? 'Logotipo de cliente' : '', width: 84, height: 84})));
+
+// visor
+let LB = [], LBi = 0;
+const dlg = $('#lb');
+function show() { const it = LB[LBi]; $('#lbimg').src = it.src; $('#lbimg').alt = it.alt || ''; $('#lbcap').innerHTML = it.cap || ''; $('#lbprev').hidden = $('#lbnext').hidden = LB.length < 2; }
+function openLB(items, i) { LB = items; LBi = i; show(); if (!dlg.open) dlg.showModal(); }
+$('#lbprev').onclick = () => { LBi = (LBi - 1 + LB.length) % LB.length; show(); };
+$('#lbnext').onclick = () => { LBi = (LBi + 1) % LB.length; show(); };
+$('#lbclose').onclick = () => dlg.close();
+dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+document.addEventListener('keydown', e => { if (!dlg.open) return; if (e.key === 'ArrowRight') $('#lbnext').click(); if (e.key === 'ArrowLeft') $('#lbprev').click(); });
+
+// marcas
+DATA.marcas.forEach(m => {
+  const b = el('button', {class: 'case', type: 'button', 'aria-label': `Ver piezas de ${m.nombre}`},
+    `<div class="cv"><img src="${m.fotos[0].src}" alt=""><span class="n">${m.fotos.length} piezas</span></div><span class="tg">${esc(m.tags)}</span><h3>${esc(m.nombre)}</h3><p>${esc(m.que)}</p>`);
+  b.onclick = () => openLB(m.fotos.map((f, i) => ({src: f.src, cap: `${esc(m.nombre)} <span>· ${i + 1} de ${m.fotos.length}</span>`})), 0);
+  $('#cases').append(b);
+});
+
+// campañas
+function camp(i) {
+  const c = DATA.campanas[i];
+  document.querySelectorAll('.tab').forEach((t, k) => t.setAttribute('aria-selected', k === i));
+  $('#tabq').textContent = c.que;
+  const box = $('#ads'); box.innerHTML = '';
+  c.ads.forEach((a, k) => {
+    const b = el('button', {class: 'ad', type: 'button', 'aria-label': `Ver anuncio de ${a.marca}`}, `<div class="im"><img src="${a.src}" alt=""></div><span>${esc(a.marca)}</span>`);
+    b.onclick = () => openLB(c.ads.map(x => ({src: x.src, cap: `${esc(x.marca)} <span>· ${esc(c.nombre)}</span>`})), k);
+    box.append(b);
+  });
+}
+DATA.campanas.forEach((c, i) => { const t = el('button', {class: 'tab', role: 'tab', type: 'button', id: 'tab' + i}, esc(c.nombre)); t.onclick = () => camp(i); $('#tabs').append(t); });
+camp(0);
+
+// video
+function vcard(v) {
+  const w = el('div');
+  const box = el('div', {class: 'vid ' + v.fmt});
+  const vid = el('video', {src: v.src, poster: v.poster, preload: 'none', playsinline: '', controls: ''});
+  vid.controls = false;
+  const p = el('button', {class: 'play', type: 'button', 'aria-label': `Reproducir ${v.nombre}`}, '<i></i>');
+  p.onclick = () => { document.querySelectorAll('video').forEach(o => { if (o !== vid) o.pause(); }); vid.controls = true; p.remove(); vid.play().catch(() => {}); };
+  box.append(vid, p);
+  w.append(box, el('div', {class: 'cap'}, `<b>${esc(v.nombre)}</b><span>${esc(v.que)}</span>`));
+  return w;
+}
+const f = $('#feat');
+f.append(vcard(DATA.tutorial));
+f.append(el('div', {}, '<p class="eb" style="margin-bottom:12px">Serie educativa</p><h3 style="font-size:clamp(28px,3vw,40px);margin-bottom:12px">Tu negocio en Facebook</h3><p class="lede">Cinco videos paso a paso: correo, perfil, página, portafolio comercial y configuración para campañas. Capturas reales, textos claros y la identidad de la marca.</p>'));
+DATA.videos.forEach(v => $('#reels').append(vcard(v)));
+
+// fotografía y web
+DATA.fotos.forEach((p, i) => {
+  const b = el('button', {class: 'ft', type: 'button', 'aria-label': `Ver foto: ${p.pie}`}, `<img src="${p.src}" alt="${esc(p.pie)}" width="${p.w}" height="${p.h}"><span>${esc(p.pie)}</span>`);
+  b.onclick = () => openLB(DATA.fotos.map(x => ({src: x.src, alt: x.pie, cap: esc(x.pie)})), i);
+  $('#fotos').append(b);
+});
+DATA.web.forEach((w, i) => {
+  const b = el('button', {class: 'wb', type: 'button', 'aria-label': `Ver ${w.nombre}`}, `<div class="im"><img src="${w.src}" alt=""></div><div class="cap"><b>${esc(w.nombre)}</b><span>${esc(w.que)}</span></div>`);
+  b.onclick = () => openLB(DATA.web.map(x => ({src: x.src, cap: `${esc(x.nombre)} <span>· ${esc(x.que)}</span>`})), i);
+  $('#webs').append(b);
+});
+
+// cotiza
+const SERV = ['Consultoría de marca', 'Diseño de marca', 'Campañas Meta Ads', 'Contenido y video', 'Fotografía', 'Web y landings', 'Estrategia 360 completa'];
+const ETAPA = ['Marca nueva', 'Renovar mi marca', 'Ya tengo marca, quiero crecer'];
+SERV.forEach((s, i) => $('#chips').append(el('label', {}, `<input type="checkbox" id="sv${i}" name="servicio" value="${esc(s)}"><span>${esc(s)}</span>`)));
+ETAPA.forEach((s, i) => $('#etapa').append(el('label', {}, `<input type="radio" id="et${i}" name="etapa" value="${esc(s)}"><span>${esc(s)}</span>`)));
+function msg() {
+  const sv = [...document.querySelectorAll('input[name=servicio]:checked')].map(x => x.value);
+  const et = (document.querySelector('input[name=etapa]:checked') || {}).value;
+  const neg = $('#negocio').value.trim(), det = $('#detalle').value.trim();
+  let m = 'Hola, Natasha. Vi tu portafolio de Michelle con Flores y quiero una cotización.';
+  if (neg) m += `\nSoy: ${neg}`;
+  if (sv.length) m += `\nMe interesa: ${sv.join(', ')}`;
+  if (et) m += `\nEtapa: ${et}`;
+  if (det) m += `\nDetalle: ${det}`;
+  return m;
+}
+function upd() { const m = msg(); $('#prev').textContent = m; $('#wa').href = 'https://wa.me/525513609261?text=' + encodeURIComponent(m); }
+$('#form').addEventListener('input', upd);
+$('#form').addEventListener('submit', e => e.preventDefault());
+document.querySelectorAll('.sv a[data-s]').forEach(a => a.addEventListener('click', () => {
+  const i = SERV.indexOf(a.dataset.s); if (i >= 0) { $('#sv' + i).checked = true; upd(); }
+}));
+upd();
+
+// copiar
+function copy(text, done, fallbackEl) {
+  const sel = () => { if (!fallbackEl) return; const r = document.createRange(); r.selectNodeContents(fallbackEl); const s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Seleccionado: copia con ⌘C o Ctrl+C'); };
+  try { navigator.clipboard.writeText(text).then(() => done('Copiado'), sel); } catch (e) { sel(); }
+}
+document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => {
+  const t = document.getElementById(b.dataset.copy);
+  copy(t.textContent, m => { b.textContent = m === 'Copiado' ? 'Copiado' : 'Selecciona'; setTimeout(() => b.textContent = 'Copiar', 1800); }, t);
+}));
+$('#copymsg').onclick = () => copy(msg(), m => { $('#ok').textContent = m; setTimeout(() => $('#ok').textContent = '', 2400); }, $('#prev'));
+</script>
